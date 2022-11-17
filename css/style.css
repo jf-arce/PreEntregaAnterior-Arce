@@ -610,7 +610,6 @@ footer{
 
 /*********TARJETAS ARTISTAS**********/
 @media screen and (max-width:768px){
-
 	#artists{
 		height: 220vh;
 	}
