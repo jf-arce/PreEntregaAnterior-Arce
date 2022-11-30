@@ -340,7 +340,6 @@ a{
 }
 
 
-
 /********FOOTER*********/
 footer{
 	background-color: #000000;
@@ -408,7 +407,8 @@ footer{
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	
+	border-top: 0.5px solid #464646;
+	margin: 0px 20px;
 }
 
 .copyright__texto{
@@ -685,52 +685,40 @@ footer{
 } 
 
 /************************************ Beats & Servicios ***************************************************/
+#beat-services{
+	background-image: url(../images/Beats&Services.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 /*hero*/
 #hero-product{
-	background-image: url(../images/venta-beats.jpg);
+	background-image: url(../images/beat&services2.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
 	margin-top: 68.78px;
 	height: 92vh;
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	grid-template-rows: repeat(2,1fr);
-	grid-template-areas: 
-	"title title"
-	"card-beat card-service";
-
-}
-.product__title{
-	grid-area: title;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 4em;
+	text-align: center;
 	color: #ffffff;
+}
+.product__title{
+	font-size: 4em;
+	
 	
 	animation: fadeIn;
 	animation-duration: 2s;
 }
-.product__beat{
-	grid-area: card-beat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 90%;
-	height: 35vh;
-	margin: auto;
-}
-.product__service{
-	grid-area: card-service;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 90%;
-	height: 35vh;
-	margin: auto;
+.product__subtitle{
+	width: 80%;
+
+	animation: fadeIn;
+	animation-duration: 2s;
 }
 
-
-/***** Tarjetas Licencias ***/
+/********** Tarjetas Licencias ********/
 .beats-services__title{
 	display: flex;
 	justify-content: center;
@@ -738,13 +726,18 @@ footer{
 	padding: 50px;
 	color: #ffffff;
 	font-size: 50px;
+	margin-bottom: 20px;
 }
 
 #beats-services{
+	height: auto;
 	display: flex;
 	justify-content: space-around;
 	gap: 20px;
 	padding: 0px 50px;
+	background-image: url(../images/Beats&Services.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .card-service{
 	width: 25%;
@@ -752,14 +745,16 @@ footer{
 	color: #000000;
 	border: 5px solid rgb(41, 41, 41);
 	border-radius: 10px;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background: linear-gradient(90deg, rgb(175, 18, 202) 0%, rgb(146, 51, 241) 100%);
 }
-.card-service:hover{
-	transform: scale(1.05);
+.card-service--active{
+	transform: scale(1.03);
+	border: 3px solid rgb(165, 255, 252);
 }
 .service__title{
 	background:  rgb(41, 41, 41);
@@ -767,8 +762,10 @@ footer{
 	padding: 20px;
 	display: flex;
 	text-align: center;
+	justify-content: center;
 	margin: 0;
 	color: white;
+	width: 100%;
 }
 .service__price{
 	padding: 10px;
@@ -776,6 +773,7 @@ footer{
 	border-bottom: 2px solid #000000;
 }
 .service__list{
+	height: 100%;
 	padding: 20px;
 	list-style-type: none ;
 	line-height: 30px;
@@ -785,10 +783,78 @@ footer{
 }
 .btn--service{
 	margin: 20px;
+	margin-bottom: 100px;
 }
 
+/****** SERVICIO DE PRODUCCION / MEZCLA & MASTERING **************/
+#production-services{
+	margin-top: 60px;
+	height: 120vh;
+}
+.services__title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	padding: 50px;
+	font-size: 3em;
+}
+.cards-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
 
+/***************** AUDIOS BEATS *******************/
+#beats{
+	background-color: #0c0c0c;
+	height: 100vh;
+}
+.beat__item{
+	background-image: url(../images/home-studio-basico.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 350px;
+	height: 100px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
+	transition-duration: 0.3s;
+}
+.beat__item:hover{
+	transform: scale(1.1);
+	transition-duration: 0.3s;
+}
+.beat__title{
+	font-size: 1.5em;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.beat__audio{
+	width: 90%;
+	height: 50px;
+}
 
+.beats__title{
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3em;
+	padding: 30px;
+}
+.beats__content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
 
 /*********************************** MEDIA QUERIES **************************************************************/
 
