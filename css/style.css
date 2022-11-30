@@ -525,7 +525,7 @@ footer{
 
 /*********TARJETAS ARTISTAS**********/
 #artists{
-	height: 130vh;
+	height: 145vh;
 	margin-bottom: -200px;
 	
 }
@@ -1088,4 +1088,76 @@ footer{
 			transform: translateX(calc(-300px * 7));
 		}
 	} 
+}
+
+/************************************ Beats & Servicios ***************************************************/
+@media (max-width:768px){
+	/*hero*/
+	#hero-product{
+	height: 92vh;
+	}
+	.product__title{
+		font-size: 3em;
+	}
+	.product__subtitle{
+		width: 80%;
+		margin-top: 20px;
+	}
+	
+}
+/********** Tarjetas Licencias ********/
+@media (max-width:768px){
+	.beats-services__title{
+		text-align: center;
+		font-size: 2.5em;
+	}
+	#beats-services{
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		
+		gap: 20px;
+		padding: 0px 50px;
+		background-image: url(../images/Beats&Services.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.card-service{
+		width: 100%;
+		font-size: 1em;
+		margin:20px 0px;
+	}
+}
+
+/****** SERVICIO DE PRODUCCION / MEZCLA & MASTERING **************/
+@media (max-width:768px){
+	#production-services{
+		margin-top: 60px;
+		height: 370vh;
+	}
+	.services__title{
+		text-align: center;
+		font-size: 2.5em;
+		padding: 10px;
+	}
+	.cards-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 50px;
+	}
+}
+
+
+/***************** AUDIOS BEATS *******************/
+
+@media (max-width:768px){
+	#beats{
+		background-color: #0c0c0c;
+		height: 225vh;
+	}
+	
+	.beats__title{
+		text-align: center;
+	}
 }
